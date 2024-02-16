@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TapResearchTakeHome</string>
+    <string name="api_token">f7741c8f3043d3448974709a5d7a1f71</string>
+    <string name="test_user">theinterviewer-1</string>
+    <string name="app_launch_placement">home-screen</string>
+    <string-array name="placement_tag_names">
+        <item>Earn Center</item>
+        <item>Survey Wall</item>
+    </string-array>
+    <string-array name="placement_tags">
+        <item>earn-center</item>
+        <item>survey-wall</item>
+    </string-array>
+</resources>
