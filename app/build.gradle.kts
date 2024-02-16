@@ -1,8 +1,6 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.kapt")
-    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -49,10 +47,6 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    // Allow references to generated code
-    kapt {
-        correctErrorTypes = true
-    }
 }
 
 dependencies {
@@ -80,15 +74,4 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
     implementation("com.google.android.gms:play-services-ads-identifier:18.0.1")
     implementation ("com.google.code.gson:gson:2.10")
-
-    implementation ("androidx.fragment:fragment-ktx:1.6.2")
-    implementation("com.google.dagger:hilt-android:2.50")
-    kapt("com.google.dagger:hilt-android-compiler:2.50")
-
-    // Mockito
-    testImplementation("org.mockito:mockito-core:5.10.0")
-    testImplementation("org.mockito:mockito-inline:3.7.0")
-    testImplementation("androidx.arch.core:core-testing:2.2.0")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
-    androidTestImplementation("org.mockito:mockito-android:2.12.0")
 }

@@ -14,9 +14,7 @@ import com.tapresearch.tapsdk.TapResearch
 import com.tapresearch.tapsdk.callback.TRContentCallback
 import com.tapresearch.tapsdk.models.TRError
 import com.tapresearch.tapsdk.models.TRReward
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
